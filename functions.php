@@ -139,6 +139,9 @@ function law_scripts() {
 
 	wp_enqueue_script( 'law-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script('respond-js', get_template_directory_uri() .'/assets/js/respond.min.js'); // async
+	wp_script_add_data('respond-js', 'conditional', 'lt IE 9');
+
 	wp_enqueue_script( 'modernizr-2.6.2', get_template_directory_uri() . '/assets/js/modernizr-2.6.2.min.js', array() );
 	wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/assets/js/jquery.easing.1.3.js', array(), true );
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), true );
