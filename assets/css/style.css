@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -183,6 +183,15 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   letter-spacing: 0;
 }
+
+.fh5co-nav ul li.has-dropdown .dropdown li.active a {
+  color: #f95959 !important;
+}
+
+.fh5co-nav ul li.has-dropdown .dropdown li.active a::after {
+  display: none;
+}
+
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
   color: #fff;
 }
