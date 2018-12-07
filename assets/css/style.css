@@ -1509,4 +1509,11 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
+/*================================================================
+  slider-full-width
+================================================================*/
+
+.slider-full-width > .fw-container-fluid,
+.slider-full-width > .fw-container-fluid .fw-col-xs-12 { padding: 0; }
+
 /*# sourceMappingURL=style.css.map */
