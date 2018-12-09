@@ -247,6 +247,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-video {
   overflow: hidden;
+  min-height: 450px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 992px) {
   .fh5co-video {
@@ -519,22 +523,13 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
 }
-#fh5co-content .video, #fh5co-content .choose,
-#fh5co-consult .video,
-#fh5co-consult .choose {
-  display: inline-block;
-}
+
 @media screen and (max-width: 768px) {
-  #fh5co-content .video, #fh5co-content .choose,
-  #fh5co-consult .video,
-  #fh5co-consult .choose {
+.video, .choose {
     width: 100% !important;
   }
 }
-#fh5co-content .video,
-#fh5co-consult .video {
-  display: table;
-  width: 50%;
+.video {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -548,9 +543,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 }
-#fh5co-content .choose,
-#fh5co-consult .choose {
-  width: 50%;
+.choose {
   padding: 40px;
 }
 
@@ -1515,5 +1508,19 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .slider-full-width > .fw-container-fluid,
 .slider-full-width > .fw-container-fluid .fw-col-xs-12 { padding: 0; }
+
+/*================================================================
+  content-section
+================================================================*/
+
+@media screen and (min-width: 993px) {
+  .content-section .fw-row {
+    display: flex;
+  }
+}
+
+.content-section .fw-container-fluid,
+.content-section .fw-row [class^="fw-col"] { padding: 0; }
+
 
 /*# sourceMappingURL=style.css.map */
