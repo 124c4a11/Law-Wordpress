@@ -543,7 +543,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 }
-.choose {
+.choose,
+.content-section > .fw-container-fluid > .fw-row > .choose[class^="fw-col"]
+ {
   padding: 40px;
 }
 
@@ -935,6 +937,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started .form-control:-ms-input-placeholder {
   color: #fff;
 }
+
 #fh5co-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
@@ -1466,18 +1469,90 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 1;
 }
 
-.form-control {
+/*================================================================
+  form
+================================================================*/
+
+.wrap-forms h2 { font-size: 32px; }
+
+form .wrap-forms label { font-weight: 400; }
+
+.form-control,
+form .wrap-forms textarea,
+form .wrap-forms input,
+form .wrap-forms select {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
+  padding: 10px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.42857;
+  color: #555555;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:active, .form-control:focus {
+.form-control:active,
+.form-control:focus,
+form .wrap-forms textarea:active,
+form .wrap-forms textarea:focus,
+form .wrap-forms input:active,
+form .wrap-forms input:focus,
+form .wrap-forms select:active,
+form .wrap-forms select:focus {
   outline: none;
   box-shadow: none;
   border-color: #F95959;
+}
+
+form .wrap-forms textarea {
+  min-height: 274px;
+  resize: vertical;
+}
+
+form .wrap-forms input:-moz-placeholder,
+form .wrap-forms textarea:-moz-placeholder {
+  font-size: 1em;
+  font-weight: 300;
+	color: #9a9a9a;
+  text-transform: none;
+  font-style: normal;
+}
+
+form .wrap-forms input::-moz-placeholder,
+form .wrap-forms textarea::-moz-placeholder {
+  font-size: 1em;
+  font-weight: 300;
+	color: #9a9a9a;
+  text-transform: none;
+  font-style: normal;
+}
+
+form .wrap-forms input:-ms-input-placeholder,
+form .wrap-forms textarea:-ms-input-placeholder {
+  font-size: 1em;
+  font-weight: 300;
+	color: #9a9a9a;
+  text-transform: none;
+  font-style: normal;
+}
+
+form .wrap-forms input::-webkit-input-placeholder,
+form .wrap-forms textarea::-webkit-input-placeholder {
+  font-size: 1em;
+  font-weight: 300;
+	color: #9a9a9a;
+  text-transform: none;
+  font-style: normal;
+}
+
+.wrap-forms input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.wrap-forms textarea:focus::-webkit-input-placeholder {
+	color: transparent;
 }
 
 .row-pb-md {
@@ -1514,13 +1589,13 @@ h1, h2, h3, h4, h5, h6, figure {
 ================================================================*/
 
 @media screen and (min-width: 993px) {
-  .content-section .fw-row {
+  .content-section > .fw-container-fluid > .fw-row {
     display: flex;
   }
 }
 
-.content-section .fw-container-fluid,
-.content-section .fw-row [class^="fw-col"] { padding: 0; }
+.content-section > .fw-container-fluid,
+.content-section > .fw-container-fluid > .fw-row > [class^="fw-col"] { padding: 0; }
 
 
 /*# sourceMappingURL=style.css.map */
