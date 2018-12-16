@@ -1555,6 +1555,11 @@ form .wrap-forms textarea::-webkit-input-placeholder {
 	color: transparent;
 }
 
+form .alert {
+  display: none;
+  margin-top: 23px;
+}
+
 .row-pb-md {
   padding-bottom: 4em !important;
 }
