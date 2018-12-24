@@ -11,6 +11,7 @@
 *
 * ======================================================= */
 body {
+  width: 100%;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1601,6 +1602,5 @@ form .alert {
 
 .content-section > .fw-container-fluid,
 .content-section > .fw-container-fluid > .fw-row > [class^="fw-col"] { padding: 0; }
-
 
 /*# sourceMappingURL=style.css.map */
