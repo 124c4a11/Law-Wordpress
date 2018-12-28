@@ -24,6 +24,9 @@ get_header();
 					get_template_part( 'template-parts/content-posts-list', 'search' );
 				endwhile; ?>
 			</div>
+			<?php the_posts_pagination( array(
+				'type' => 'list',
+			) ); ?>
 		</div>
 	</div>
 <?php endif; ?>
